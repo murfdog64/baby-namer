@@ -21,31 +21,50 @@ h1 {
   font-size: large;
 }
 
-#genders {
+#gender-selectors {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 10px;
 }
 
+#gender-selectors > label {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#gender-selectors > input {
+  margin-top: 5px;
+}
+
 #generator-button {
   margin: 0 auto;
   display: block;
   height: 44px;
-  width: 185px;
+  width: 200px;
   font-size: large;
   padding: 10px;
   text-align: center;
+  background-color: orchid;
 }
 
 #generator-button:hover {
   cursor: pointer;
+  box-shadow: 0px 5px 10px 2px gray;
+}
+
+#name-section {
+  display: flex;
+  justify-content: center;
 }
 
 #result {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 45px;
+  border: 2px solid maroon;
+  padding: 5px;
 
 }

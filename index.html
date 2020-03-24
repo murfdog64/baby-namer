@@ -9,9 +9,9 @@
 <body>
   <h1>Name that baby!</h1>
   <form id="the-form" name="input">
-    <label for="last-name">Desired Last Name</label>
+    <label for="last-name">Please enter your last name:</label>
     <input id="last-name" type="text" placeholder="Last Name">
-    <div id="genders">
+    <div id="gender-selectors">
       <input type="radio" id="male" name="gender" class = "pick-gender" value="male">
       <label for="male">Male</label>
       <input type="radio" id="female" name="gender" class = "pick-gender" value="female">
@@ -20,9 +20,13 @@
       <label for="male">Other</label>
     </div>
   </form>
-  <button id="generator-button">Name that baby!</button>
-  <div id="result"></div>
+  <button id="generator-button">Create Name!</button>
+  <br>
+  <div id="name-section">
+    <div id="result"></div>
+  </div>
   <script src="names.js"></script>
   <script src="script.js"></script>
+  <script src="random_util.js"></script>
 </body>
 </html>
